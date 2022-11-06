@@ -1222,7 +1222,7 @@ if (!isPrems && plugin.dorracoins && global.db.data.users[m.sender].dorracoins <
                     if (m.limit)
                         m.reply(+m.limit + ' 𝘿𝙄𝘼𝙈𝘼𝙉𝙏𝙀(𝙎) 💎 𝙐𝙎𝘼𝘿𝙊(𝙎)')
                  if (m.dorracoins)
-                        m.reply(+m.dorracoins + ' 𝘿𝙊𝙍𝙍𝘼𝙏𝘾𝙊𝙄𝙉𝙎 🪙 𝙐𝙎𝘼𝘿𝙊(𝙎)')
+                        m.reply(+m.dorracoins + ' 𝘾𝙊𝙄𝙉𝙎 🪙 𝙐𝙎𝘼𝘿𝙊(𝙎)')
               
                 }
                 break
@@ -1321,8 +1321,8 @@ export async function participantsUpdate({ id, participants, action }) {
                         text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Welcome, @user!').replace('@subject', await this.getName(id)).replace('@desc', groupMetadata.desc?.toString() || '*𝙂𝙧𝙪𝙥𝙤 𝙂𝙚𝙣𝙞𝙖𝙡 | 𝘾𝙤𝙤𝙡 𝙂𝙧𝙤𝙪𝙥 😼*') :
                             (chat.sBye || this.bye || conn.bye || 'Bye, @user!')).replace('@user', await this.getName(user)) //.replace('@user', '@' + user.split('@')[0])
                             let apii = await this.getFile(pp)
-                            this.sendHydrated(id, text, groupMetadata.subject, apii.data, 'https://github.com/DIEGO-OFC/DORRAT-BOT-MD', '𝐃𝐎𝐑𝐑𝐀𝐓-𝐁𝐎𝐓-𝐌𝐃', null, null, [
-                            [(action == 'add' ? '𝐒𝐄 𝐔𝐍𝐈𝐎 🌠 | 𝐇𝐈!!' : '𝐒𝐄 𝐅𝐔𝐄 𝐔𝐍 𝐌𝐀𝐑𝐈𝐂𝐎𝐍 🏳️‍🌈 | 𝐋𝐄𝐒𝐁𝐈𝐀𝐍𝐀'), '.s'],    
+                            this.sendHydrated(id, text, groupMetadata.subject, apii.data, 'https://github.com/DIEGO-OFC/DORRAT-BOT-MD', 'AUTOMATIC 𝐁𝐎𝐓-𝐌𝐃', null, null, [
+                            [(action == 'add' ? '𝐒𝐄 𝐔𝐍𝐈𝐎 🌠 | 𝐇𝐈!!' : '𝕊𝔼 𝔽𝕌𝔼 𝔸 ℂ𝕆𝕄ℙℝ𝔸ℝ ℙ𝔸ℕ 🏳 | 𝕊𝔼 𝔽𝕌𝔼 𝔸 ℂ𝕆𝕄ℙℝ𝔸ℝ ℙ𝔸ℕ'), '.s'],    
                             ['⫹⫺ 𝐌𝐄𝐍𝐔', '/menu']
                             ], '', { mentions: [user]})
                            }
